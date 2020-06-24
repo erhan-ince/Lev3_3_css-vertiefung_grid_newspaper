@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   background-color: rgb(233, 233, 224);
+   color: #333;
+   font-family: 'Cormorant Garamond', serif;
+   display: grid;
+   grid-template-columns: 4fr 1fr;
+   grid-template-areas:
+      'header header'
+      'main aside';
+   width: 100vw;
+}
+header {
+   grid-area: header;
+}
+header h1 {
+   text-align: center;
+}
+header div {
+   display: flex;
+   justify-content: space-around;
+   border-top: 4px double black;
+   border-bottom: 4px double black;
+}
+
+header div h4 {
+   font-size: 0.8em;
+}
+
+main {
+   grid-area: main;
+   display: grid;
+   grid-template-columns: 1fr 1fr 2fr;
+   grid-template-areas:
+      'burn burn burn'
+      'a b img'
+      'c d img'
+      'e f img';
+}
+main h2 {
+   grid-area: burn;
+   margin-left: 10%;
+}
+main div {
+   padding: 10px 10px;
+}
+main div:nth-of-type(1) {
+   grid-area: a;
+}
+main div:nth-of-type(2) {
+   grid-area: b;
+}
+main div:nth-of-type(3) {
+   grid-area: c;
+}
+main div:nth-of-type(4) {
+   grid-area: d;
+}
+main div:nth-of-type(5) {
+   grid-area: e;
+}
+main div:nth-of-type(6) {
+   grid-area: f;
+}
+main img {
+   grid-area: img;
+   width: 100%;
+}
+aside {
+   width: 60%;
+   height: 90%;
+   margin-left: 2%;
+   margin-right: 5%;
+   grid-area: aside;
+   text-align: center;
+}
+aside h6 {
+   font-size: 1em;
+   margin-top: 2%;
+}
+aside div:nth-of-type(1) {
+   height: 30%;
+   margin-top: 5%;
+   font-size: 3em;
+   border: 3px double black;
+}
+aside div:nth-of-type(1) h1 {
+   font-size: 1.6em;
+   padding-top: 10px;
+}
+aside div:nth-of-type(2) {
+   height: 30%;
+   margin-top: 5%;
+   border: 3px double black;
+}
+aside div:nth-of-type(2) h1 {
+   font-size: 1.5em;
+   padding-top: 30px;
+}
+aside div:nth-of-type(2) p {
+   font-size: 1em;
+   padding-top: 5px;
+}
+aside div:nth-of-type(2) a {
+   font-size: 1em;
+   color: rgb(88, 100, 108);
+   text-decoration: none;
+   border-bottom: 1px solid rgb(88, 100, 108);
+}
+aside div:nth-of-type(3) {
+   margin-top: 5%;
+   border: 3px double black;
+   height: 34%;
+}
+aside img {
+   margin-top: 10%;
+   width: 80%;
+   height: 80%;
+   margin-bottom: 10%;
+}
